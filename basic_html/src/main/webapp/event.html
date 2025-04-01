@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이벤트 참여</title>
+</head>
+<body>
+<form method="POST", action="http://172.30.1.22:8080/basic_html/eventok.jsp">
+고객 아이디 : <input type="text" name="mid"><br>
+고객명 : <input type="text" name="mname"><br>
+통신사 : 
+<select name="mcorp">
+<option value="SKT">SKT</option>
+<option value="KT">KT</option>
+<option value="LGT">LGT</option>
+<option value="알뜰폰">알뜰폰</option>
+</select>
+연락처 : <input type="text" name="mtel"><br>
+SMS 수신여부 : <input type="radio" name="magree" value="동의함">동의함
+<input type="radio" name="magree" value="동의안함">동의안함<br>
+<input type="submit" value="이벤트 참여">
+</form>
+
+</body>
+</html>

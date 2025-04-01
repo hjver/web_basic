@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자식창 팝업페이지</title>
+</head>
+<body>
+<ul>
+<li onclick="addr('05421', '서울시 마포구 자바동 21-1')">05421 서울시 마포구 자바동 21-1</li>
+<li onclick="addr('05320', '서울시 마포구 자바 2가 11')">05320 서울시 마포구 자바 2가 11</li>
+<li onclick="addr('05421', '서울시 마포구 자바 3가 33')">05421 서울시 마포구 자바 3가 33</li>
+</ul>
+<br><br><br>
+<input type="button" value="창닫기" onclick="pop_close()">
+</body>
+<script>
+function pop_close(){
+	self.close();  //자신의 창을 강제 종료 시키는 함수
+}
+
+function addr(a, b){ //a 우편번호,  b 도로명 주소
+	//window.oopener : 부모창을 말함
+	window.opener.document.getElementById("mpost").value = a;
+	window.opener.document.getElementById("road").value = b;
+	self.close();
+}
+</script>
+</html>

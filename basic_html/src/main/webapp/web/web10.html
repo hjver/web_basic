@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>부모창 웹페이지</title>
+</head>
+<body>
+주소 : <input type="text" id="mpost" readonly>
+<input type="button" value="주소찾기" onclick="address()">
+<br>
+<input type="text" id="road" readonly><br>
+<input type="text" id="address">
+</body>
+<script>
+//window.open("팝업창 경로", "", "옵션(가로,세로,스크롤바,팝업ㅊㅇ 크기변경)")
+//해당 팝업에 대한 부모창, 자긱창을 연결시 동일한 ip 또는 동ㅇ일한 도메이네서 정상 작동하며,
+//그 외에 CORS로 인하여 데이터 이관하지 못함 (CORS error)
+function address(){
+	window.open("./pop.html", "", "width=500 height=500");
+}
+</script>
+</html>

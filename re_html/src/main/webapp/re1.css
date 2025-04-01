@@ -1,0 +1,19 @@
+@charset "UTF-8";
+a {
+	text-decoration: none;   /* a태그 사용시 밑줄 삭제 */
+	color: blank;            /* 글자색상
+}
+.in{
+	width: 300px;
+	height: 30px;
+	box-sizing: border-box;  /* 오브젝트기준으로 안쪽 외곽선 */
+	margin-left: 15px;
+	text-indent: 5px;  /* 입력값에 대한 커서 위치를 조정하는 속성*/
+}
+
+.btn{
+	width: 130px;
+	height: 60px;
+	background-color: orange;
+	border: 0;
+}

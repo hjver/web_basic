@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* 
+pc : 12px 기본 형태의 폰트 크기
+mobile : 14~16px 기본 형태의 폰트 크기
+*/
+body{
+	margin: 0;
+	padding: 0;
+	fontsize: 16px; /* body안에 적용되는 모든 폰트 크기 */
+}

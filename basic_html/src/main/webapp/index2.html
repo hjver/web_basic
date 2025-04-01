@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 1일차 - 기초(목차, 링크)</title>
+</head>
+<body>
+<ul> <!-- ul: 목차 (css적용전: 씨멘틱 마크업, css적용후:마크업 -->
+<li><b>공지사항 1</b></li> <!-- li 리스트 출력 => 점모양은 디스크로 부른다-->
+<li>공지사항 2</li>
+<li>공지사항 3</li>
+</ul>
+<ol> <!-- ol: 목차 (숫자) -->
+<li>게시물</li>
+<li>게시물</li>
+<li>게시물</li>
+</ol>
+
+<dl> <!-- dl: HTML5 태그 추가, dt: 목차의 타이틀, dd: li 역할 -->
+<dt>오늘의 헤드라인 뉴스</dt>
+<dd>2025-01 첫날 월요일</dd>
+<dd>2025-01 오늘의 날씨</dd>
+</dl>
+
+<!-- 링크테그: 페이지 이동 (href속성: URL 경로를 말함
+target => 페이지 이동시 어떤 형태로 출력을 시킬 것인지를 설정하는 속성값
+_self : 현재 페이지에서 페이지 이동
+_blank : 신규 탭을 오픈 후 페이지 이동
+_new : 주로 모바일에서 사용되는 신규 탭 속성
+_top : 팝업창을 오픈시 최사위로 오픈
+-->
+<a href="http://naver.com" target="_self">네이버</a><br>
+<a href="http://google.com" target="_blank">구글</a><br>
+<a href="http://daum.net><font color="red">다음</font></a>
+
+</body>
+</html>

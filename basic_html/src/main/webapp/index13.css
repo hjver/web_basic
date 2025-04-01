@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	display:block; /* span태그: display 속성이 적용해야만 크기가 조정됨 */
+	width:100px;
+	height:100px;
+	border:1px solid red;
+	text-align:center;
+}
+.box2{
+	display: block; /* label태그: span과 동일하게 display 적용해야 합니다. */
+	width: 300px;
+	height: 30px;
+	background: orange;
+}
+/* solid(외줄선), dashed(절취선, 파선), dotted(점선),
+double(두줄선, 이중선) - 최소 3px 이상
+*/
+.btn{
+	display: block;
+	width:150px;
+	height:50px;
+	border:3px double black;
+}
+.box3{
+	display: block;
+	width:150px;
+	height:150px;
+	background-color: blue;
+	color: white;
+	font-style: normal;
+	
+}
+.ulcss{
+	width:400px;
+	height:160px; /* 부모태그는 자식태그의 높이 x 개수 */
+	list-style: none; /* 목차 태그에 한해서 목차 형태를 사제 (ul. ol) */
+	/* 안쪽, 바깥쪽 여백을 */
+	margin: 0;
+	padding: 0;
+}
+.licss{
+	width:100px;
+	height:40px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 40px;
+}
+.licss:hover{
+	background-color: skyblue;
+}
+
+.disc{
+	width: 500px;
+	height: 40px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.lidisc{
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	background-color: red;
+	/* flost이란 오부젝트 정렬 기준을 말하며 (left, center, right) */
+	float: left;
+}
+.lidisc2{
+	width:100px;
+	background-color: black;
+}
+
+
+
+
+
+
+

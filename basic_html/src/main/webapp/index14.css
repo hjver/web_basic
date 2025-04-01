@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	padding: 0;
+}
+/*
+position 속성 : 오브젝트의 위치를 변경 할 수 있는 옵션
+static : 자신의 위치를 고정시켜서 영역을 출력시키는 형태
+relative : 자신의 위치를 고정 및 반고정 형태로 사용하여 출력시키는 형태
+absolute : body 기준으로 자유 분방히게 영역없이 사용하는 출력시키는 형태
+
+1. 부모태그기 static 일 경우 자식 태그는 relative 또는 static일 겨웅 범위 안에서 조정
+2. 부모태그기 relative 일 경우 자식 태그는 relative 또는 absolute 사용가능
+3. 부모태그기 absolute 일 경우 자식 태그는 relative 또는 absolute 사용가능
+
+static : margin으로 이동시킴
+relative : top, left, margin으로 이동시킴
+absolute : top, left, right, bottom으로 이동시킴
+*/
+
+.box{    /* 부모태그 */
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background-color: black;
+}
+.sbox{   /* 자식태그 */
+	position: absolute;
+    right: 0;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;	
+}
+.box2{    /* 부모태그 */
+	position: relative;
+	width: 500px;
+	height: 500px;
+	background-color: pink;
+}
+.sbox2{   /* 자식태그 */
+	position: absolute;
+	bottom:0;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: blue;	
+}
+

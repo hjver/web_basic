@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수 응용편</title>
+</head>
+<body>
+아이디 : <input type="text" id="mid">  <!-- value="" 생략 -->
+<input type="button" value="중복체크" onclick="idcheck()">
+<br><br><br>
+
+<!--
+응용문제
+상품가격이 10000 이며, 사용자가 포인트 금액 입력 합니다. 포인트 적용 이라는 버튼을 클릭시
+해당 상품가격에서 포인트를 제외한 퇴종 결제 금액을 console로 출력하시오.
+[결과] 옛; 포인트를 1500 적용시
+최종금랙 : 8500
+-->
+
+<p>상품 가격에 포인트를 적용하여 최종 결제금액</p>
+상품가격 : <input type="text" id="product" value="10000" readonly><br>
+포인트 : <input type="text" id="point" value=""><br>
+<input type="button" value="포인트 적용" onclick="pay()">
+
+<!--
+응용문제
+전역변수 있는 인증번호와 동일 인증번호를 사용자가 입력 후 인증번호 확인 버튼을 클릭시
+"정상적으로 인증이 완료 되었습니다." 라는 경고 메세지를 출력하시고
+다른 인증번호를 입력시 "해당 인증번호가 올바르지 않습니다." 라는 경고 메세지를 출력하시오.
+-->
+
+<br><br>
+인증번호 : <input type="text" maxlength="6" id="security">
+<input type="button" value="인증번호 확인" onclick="check()">
+
+
+</body>
+<script>
+var code = "189922";   //전역변수 적용 (발송받은 인증 번호))
+</script>
+<script src="./js/web2.js?v=2"></script>  <!-- .js 로드 -->
+
+</html>

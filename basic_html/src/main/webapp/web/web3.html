@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 
+</title>
+</head>
+<body>
+이동할 URL을 입력하세요 :
+<input type="text" id="weburl">
+<input type="button" value="이동" onclick="gopage()">
+<br><br><br>
+비밀번호 : <input type="password" id="pw1"><br>
+동일한 비밀번호 : <input type="password" id="pw2"><br>
+<button type="button" onclick="pwd()">비밀번호 변경</button>
+
+<!-- input : onclick 속성 사용 가능 
+checked, radio : checked (기본 선택)
+**** id랑 함수 이름이 겹칠 경우 오류가 발생할 수 있음
+-->
+<p>목록리스트</p>
+<input type="checkbox" id="all" onclick="fnall()">전체선택<br>
+<input type="checkbox" id="box1">선택1<br>
+<input type="checkbox" id="box2">선택2<br>
+<input type="checkbox" id="box3">선택3<br>
+
+</body>
+<script src="./js/web3.js?v=2"></script>
+</html>

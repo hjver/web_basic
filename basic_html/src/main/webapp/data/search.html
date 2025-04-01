@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품 검색</title>
+</head>
+<body>
+<form id="frm" method="post" action="searchok.jsp">
+검색어 : <input type="text" name="search">
+<input type="button" value="전송" onclick="search_check()">
+</form>
+</body>
+<script>
+function search_check(){
+	if(frm.search.value == ""){
+		alert("검색어를 입력하세요.");
+	}
+	else{
+		frm.submit();
+	}
+}
+</script>
+</html>

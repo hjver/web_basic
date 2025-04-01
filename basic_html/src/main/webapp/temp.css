@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body{
+	margin:0;
+	padding:0;
+}
+.top{
+	height: 100px;
+	background-color: yellow;
+}
+.topmenu{
+	width: 1200px;
+	height: inherit;
+	background-color: grey;
+	margin: 0 auto;
+}
+.menu{
+	height: 80px;
+	background-color: green;
+}
+.container{
+	position: relative;
+	height: auto;
+	background-color: pink;
+}
+.flow{
+	position: absolute;
+	left: 50%;
+	margin-left: 600px;
+	width: 80px;
+	height: 250px;
+	background-color: black;
+}
+.banner{
+	height: 300px;
+	background-color: skyblue;
+}
+.md{
+	height: 800px;
+	background-color: purple;	
+}
+.board{
+	height: 500px;
+	background-color: yellowgreen;		
+}
+.aside_board{
+	width: 1200px;
+	height: 500px;	
+	background-color: orange;
+	margin: 0 auto;
+}
+.notice{
+	width: 600px;
+	height: inherit;	
+	background-color: #FF69B4;	
+	float: left;
+}
+.event{
+	width: 600px;
+	height: inherit;	
+	background-color: #ADA642;	
+	float: left;
+}
+.review{
+	height: 400px;
+	background-color: white;
+}
+.copywrite{
+	height: 200px;
+	background-color: black;
+}

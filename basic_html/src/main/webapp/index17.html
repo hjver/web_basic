@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 
+viewport : 사용자가 접속한 device 화면
+width=device-width : 접속한 device의 가로 크기
+initial-scale : 확대 기준
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTML - Mobile 전용 웹페이지</title>
+<link type="text/css" rel="stylesheet" href="./index17.css?v=1">
+</head>
+<body>
+<p>모바일 전용 interface 태그</p>
+<input type="number"><br>  <!-- 숫자만 입력 (Mobile전용) - ios에서는 인식이 안됨 -->
+<input type="tel"><br>     <!-- 숫자 전화 번호를 입력받을 경우 사용하는 속성(M) -->
+<input type="color"><br>   <!-- 색상을 선택하는 속성값 (P,M) -->
+<input type="date"><br>    <!-- 날짜를 선택하는 속성값 (P,M) -->
+<input type="time"><br>    <!-- 시간를 선택하는 속성값 (P,M) -->
+<input type="datetime-local"><br>  <!-- 날짜+시간를 선택하는 속성값 (P,M) -->
+<input type="week"><br>    <!-- 주일표시(주차)를 선택하는 속성값 (P,M) ios에서는 사용불능-->
+<input type="email"><br>   <!-- 이메일(M) - android(한글 이메일 적용안됨) -->
+<input type="url"><br>     <!-- URL(M) - android(한글 도메인 적용안됨) -->
+<br><br>
+<!-- range : 범위선택 속성 (P,M) min(최소), max(최대) 속성을 구분 -->
+<!-- range는 form과 output태그와 함께 적용하여 사용하는 속성값 -->
+<form oninput="aa.value=parseInt(a.value)">
+숫자 : 1 <input type="range" min="1" max="10" id="a"> 10
+<br><br>
+<!-- output 태그: input에 입력된 값을 출력시키는 역할 태그 -->
+선택한 숫자 : <output for="a" name="aa"></output>
+</form>
+<!-- a태그 중 href값에 tel 속성을 입력시키면 모바일에서 전화 디바이스로 전환 -->
+대리운전 : <a href="tel:1588-1588">1588-1588</a>
+<br><br>
+<!-- SMS문자로 인증코드 발송시 자동으로 인증번호 값이 입력하는 사항 (M) -->
+<input autocomplete="one-time-code">
+
+</body>
+</html>

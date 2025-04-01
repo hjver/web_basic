@@ -1,0 +1,60 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background-color: blue;
+}
+.sbox1{
+	position: absolute;
+	top: 150px;
+	desplay: block;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+.sbox2{
+	position: absolute;
+	right: 0;
+	top: 150px;
+	desplay: block;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+.box2{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background-color: purple;	
+}
+.sbox3{
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	desplay: block;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+.obj{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	border-radius: 300px;
+}
+.sobj{
+	position: absolute;
+	top: 100px;
+	right: 0;
+	desplay: block;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	border-radius: 100px;
+}

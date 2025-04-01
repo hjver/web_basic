@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	padding: 0;
+}
+/* padding : 안쪽 여백이며, 단 안쪽 여백을 적용시 실제 적용한 오브벡트 크기가 더 커질수 있음 */
+.box{
+	width: 150px;
+	height: 50px;
+	background-color: orange;
+	padding-left: 50px;
+	padding-top: 50px;
+}
+.box2{
+	width: 200px;
+	height: 100px;
+	background-color: pink;
+	padding-left: 50px;
+	padding-top: 50px;
+	/* box-sizing : padding, border에 적용하여
+	안쪽 여백에 대한 크기를 별도로 관리할 수 있는 속성 */
+	box-sizing: border-box;
+}
+
+.menus{
+	width: calc(100px * 4); /* calc() 계산식을 지정할수 있는 css 전용 함수 */
+	height: 40px;
+	/* border: 1px solid red; */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menus > li {
+	width: 100px;
+	height: 40px;
+	border: 1px solid black; /* 가로, 세로길이 + border의 px까지 적용됨 */
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	box-sizing: border-box;	
+}
+
+.menus > li:hover{
+	background-color: yellow;
+}
+
+/* 해당 li 태그에 마우스 오버와 합게
+ol class를 호출하여 display를 가동시킴 */
+.menus > li:hover .smenus{
+	display: block;	
+}
+
+.smenus { /* ol */
+	display: none;    /* 해당 오브젝트를 수김 : display: none */
+	width: inherit;   /* inherit : 상속  */
+	height: calc(40px * 2);
+	border: 1px solid black;
+	box-sizing: border-box;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+.smenus > li{
+	width: inherit;
+	height: 40px;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+

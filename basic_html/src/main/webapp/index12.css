@@ -1,0 +1,70 @@
+@charset "UTF-8";
+body{   /* body 태그에 적용 */
+	margin: 0;  /* 바깥쪽 여백 */
+	padding: 0; /* 안쪽 여백 */
+}
+.box{
+	width:100px;
+	height:100px;
+	background-color: blue; /* 배경색상 */
+}
+.box2{
+	width:100px;
+	height:100px;
+	background-color: orange;
+	/*
+	border-color: black;  외곽선 색상
+	border-style: solid;  외곽선 종류
+	border-width: 5px;    외곽선 두께
+	*/
+	border: 2px solid green
+}
+.box3{
+	width:100px;
+	height:100px;
+	background-color: pink;
+	border-radius: 100px;  /*모서리를 형태를 변경하는 속성(height기준) */
+}
+.box4{
+	width:200px;
+	height:100px;
+	background-color: red;
+	border-radius: 100px 0 100px 0; /* 왼쪽 상단, 오른쪽 상단, 오른쪽 하단, 왼쪽 하단 */
+}
+.obj1{
+	width:100px;
+	height:100px;
+	background-color: purple;
+	border-radius: 50% 0 50% 50%;
+}
+.obj2{
+	width:100px;
+	height:100px;
+	background-color: skyblue;
+	border-radius: 50% 50% 0 0;
+}
+.obj3{
+	width:100px;
+	height:100px;
+	background-color: yellowgreen;
+	border-radius: 0 50% 50% 0;
+}
+.close{
+	width:50px;
+	height:50px;
+	background-color: black;
+	color: white;
+	font-size: 30px;  /* 폰트의 크기 */
+	font-weight: bold;  /* 폰트의 굵기 */
+	/* 오브젝트 가로 기준으로 중앙정렬 (left, center, right) */
+	text-align: center; 
+	line-height: 50px;  /* 글자행의 간격 */
+}
+.close:hover{  /* :hover(속성) => 마우스 포인터가 해당 오브젝트에 있을 경우 */
+	background-color: red;
+	color: blue;
+}	
+
+	
+	
+	

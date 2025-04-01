@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>아이디 찾기</title>
+</head>
+<body>
+<form id="frm" method="post" action="idcheck.jsp">
+아이디 : <input type="text" name="name">
+이메일 : <input type="text" name="email">
+<input type="button" value="전송" onclick="idcheck()">
+</form>
+</body>
+<script>
+function idcheck(){
+	frm.submit();
+}
+</script>
+</html>

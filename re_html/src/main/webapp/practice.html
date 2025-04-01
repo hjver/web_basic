@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습</title>
+</head>
+<body>
+첫번째 숫자 : <input type="text" id="no"><br>
+첫번째 숫자 : <input type="text" id="no2"><br>
+<input type="button" value="실행" onclick="gugu()">
+<br><br>
+
+<p>구구단 짝수, 홀수</p>
+숫자1 : <input type="text" id="no3" maxlength="1"><br>
+숫자2 : <input type="text" id="no4" maxlength="1"><br>
+<select onchange="gugu2(this.value)">
+<option value="">결과값 선택</option>
+<option value="even">짝수</option>
+<option value="odd">홀수</option>
+</select>
+<br><br>
+
+<ul id="news_list">
+
+</ul>
+<br>
+언론사 검색 : <input type="text" id="search_word">
+<input type="button" value="검색" onclick="search_news()">
+<input type="button" value="전체" onclick="all_view()">
+
+</body>
+<script src="./data.js"></script>
+<script src="./practice.js?v=5"></script>
+</html>

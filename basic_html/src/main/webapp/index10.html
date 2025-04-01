@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 2일차 - 동영상 출력</title>
+</head>
+<body>
+<!-- video : 동영상, 음악을 사용할수 있으며, 속성중에 다음과 같습니다.
+controls : play버튼, 소리, 크기 등 사용할수 있는 도구를 출력
+muted : 음소거 ==> autoplay (자동재생)
+loop : 반복재생
+
+source 태그 : 영상, 음악파일을 로드하는 태그
+type 속성 : audio, video / mp4, webm, mp3,  avi, mpeg
+poster : 썸네일 이미지를 출력시켜 주는 속성값
+
+track : 자막을 이용하여 영상에 출력시키는 태그
+kind : subtitles(문자로 출력만), captions(청각장애용), metadata(스크립트)
+src : 자막 경로
+srclang : 언어셋
+label : 사용자에게 언어별 리스트 출력
+ -->
+<video width="550" height="550" poster="./apink.webp" controls>
+<source src="./nonono.mp4" type="video/mp4">
+<track kind="subtitles" src="" srclang="EN" label="English">
+<track kind="subtitles" src="" srclang="KO" label="Korea">
+<track kind="subtitles" src="" srclang="JP" label="Japan">
+</video>
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Node 응용편</title>
+</head>
+<!-- 
+숙제 : 목록생성에 사용자가 입력한 숫자 만큼 리스트가 출력 되도록 합니다.
+클릭 버튼을 핸들링할 경우 다음과 같이 코드가 생성 되도록 하시오.
+예시코드
+<select id="ea">
+<option value="1">1EA</option>
+<option value="2">2EA</option>
+<option value="3">3EA</option>
+<option value="4">4EA</option>
+</select>
+-->
+<body>
+목록생성 : <input type="text" id="no">개수
+<input type="button" value="클릭" onclick="make_select()">
+<div id="box"></div>
+<br><br><br>
+
+<!-- 
+응용문제2 return 함수
+사용자가 2개의 숫자 값을 각가의 input 태그에 입력합니다.
+해당되는 숫자 범위의 모든 합을 계산하는 return 함수를 코드로 작성하시오.
+예시
+첫번째 : 5
+두번째 : 10
+결과 : 45
+
+응용문제3
+결제확인 버튼을 클릭시 return 함수를 이용하여 상품금액, 할인율, 적랍금 사용을 모두
+계산 후 최종결제 금액이 출력되는 코드를 작성하시오.
+예시
+상품금액(10000)
+할인율 (20)%
+적립금 5000
+--------------
+최종결제금액 : 3000 원
+-->
+첫번째 <input type="text" id="no1"><br>
+두번째 <input type="text" id="no2"><br>
+<button type="button" onclick="calc()">계산하기</button>
+<br><br><br>
+상품금액 : <input type="text" id="num1" value="10000" readonly="readonly"><br>
+할인율 : <input type="text" id="num2"> % <br>
+적립금 : <input type="text" id="num3"><br>
+<button type="button" onclick="pay()">계산확인</button><br>
+최종결제금액 : <div id="total"></div> 원
+
+</body>
+<script src="./js/web9.js?v=3"></script>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 2일차 - 사용자 정보 입력 태그</title>
+</head>
+<body>
+<!-- input : 데이터 정보를 입력하는 태그
+type : 속성
+ - text : (문자, 숫자, 특수문자등) 사용자가 입력한 값을 노출하면서 보여주는 입력폼
+ - password : 입력된 값을 특수문자(디스크)로 출력시키는 입력폼
+ - checkbox : 사용자가 체크하여 선택하는 입력폼 - 한가지 이상을 선택할 때 사용
+ - radio : 한가지 이상의 값 중 한가지를 선택하는 입력폼
+ - button : value와 함께 사용되며, 클릭시 이벤트가 발생하는 폼
+-->
+아이디 : <input type="text"><br>
+패스워드 : <input type="password"><br>
+<input type="checkbox">동의함<br>
+<input type="radio">신용카드 결제<br>
+<input type="button" value="로그인">
+<p>
+<!-- radio 속성형태는 그룹 형태의 구조를 가지고 있습니다.
+그룹을 설정하는 속성은 name으로 셋팅됩니다.
+ -->
+<input type="radio" name="a">동의함
+<input type="radio" name="a">동의함
+<br>
+<input type="radio" name="b">SMS 수신함
+<input type="radio" name="b">SMS 수신안함
+</p>
+<!-- hecked : 미리 데이터를 체킹하여 적용시키는 속성 -->
+<p>
+<input type="checkbox" checked>자동 로그인
+</p>
+<p>
+<input type="radio" name="c" checked>신용카드
+<input type="radio" name="c">계좌이체
+<input type="radio" name="c">무통장입금
+<input type="radio" name="c">쿠폰사용
+</p>
+<p>
+<!-- texterear : 여러 단어를 복합적으로 입력을 필요로 할 경우 사용 
+cols : 텍스트 영역의 가로크기를 말함
+rows : 한번에 보여지는 라인수를 말함
+(해딩 row 숫자보다 믈겨우 자동 스크롤버거 생성됨)
+-->
+<textarea cols="150" rows="10"></textarea>
+</p>
+<p>
+<!-- select는 선택사항을 미리 셋팅후 사용자가에게 옵션을 선택하는 형태의 폼
+option은 selelct와 함께 사용하는 마크업입니다.
+ -->
+통신사 : <select>
+<option>SKT</option>
+<option>KT</option>
+<option>LGT</option>
+<option>알뜰폰</option>
+</select>
+</p>
+<!-- HTML5 형태의 추가 태그 -->
+<!-- 
+type="text" + datalist가 결합하여 사용자가 찾고자 하는 리스트를 빠르게
+보여주는 가능을 하게됩니다. list 속성을 사용하며, datalist id라는 속성을 셋팅해야만 적용 
+ -->
+<p>
+상품검색 : <input type="text" list="aaa">
+<datalist id="aaa">
+	<option>김치 냉장고</option>
+	<option>LG 에어콘</option>
+	<option>삼성 에어콘</option>
+	<option>LG 가습기</option>
+</datalist>
+</p>
+<p>
+<!-- label : checkbox, radio의 핸들링이 쉽게 할 수 있도록 보조역할의 마크업
+for 속성과 id라는 속성을 이용하여 핸들링 하게 됩니다.
+* id는 절대 중복이름을 사용하지 않습니다.
+ -->
+SMS 수신여부 :
+<input type="radio" name="d" id="sms1"><label for="sms1">수신동의</label>
+<label><input type="radio" name="d">수신거부</label> <br><br>
+<label><input type="checkbox">자동 로그인</label>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데이터 값을 HTML에 출력하는 방법(NODE)</title>
+<style>
+.mail{
+	width: 150px;
+	height: 40px;
+	box-sizing: border-box;
+	background-color: skyblue;
+}
+</style>
+</head>
+<body>
+<input type="button" value="노드 앞에 추가" onclick="a()">
+<input type="button" value="노드 뒤에 추가" onclick="b()">
+<input type="button" value="노드 중간에 추가" onclick="c()">
+<input type="button" value="노드 뒤에 HTML추가" onclick="d()">
+<ul id="user">
+<li>이순신</li> <!-- 0 -->
+<li>류관순</li> <!-- 1 -->
+<li>장보고</li> <!-- 2 -->
+</ul>
+
+<br><br><br>
+<div id="box"></div>
+<input type="button" value="인증메일 발송" onclick="z()">
+<br><br><br>
+
+<!-- 
+응용문제
+생성할 노드 갯수에 숫자를 하나 입력합니다.
+노드생성 버튼을 클릭시 다음과 같은 태그로 노드 갯수 만큼 생성 되도록 코드를 작성하시오.
+
+예시) 4를 입력 후 버튼 클릭시
+<input type="checkbox" id="test1">정답1
+<input type="checkbox" id="test2">정답2
+<input type="checkbox" id="test3">정답3
+<input type="checkbox" id="test4">정답4
+-->
+생성할 노드 갯수 : <input type="text" id="nidx">
+<input type="button" value="노드생성" onclick="n_create()">
+<div id="node"></div>
+
+</body>
+<script src="./js/web8.js?v=2"></script>
+</html>

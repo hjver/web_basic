@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 1일차 - 기초 (Table)</title>
+</head>
+<body>
+<!-- 
+table : 표, 그래프, 통계, 게시판, 웹 아웃라인등 여려가지를 표현하는 씨멘틱 마크업
+tr : 줄(행)
+td : 칸(열)
+border : 외각선 두께
+cellspacing : 칸 기준으로 바깥쪽 여백 조정
+cellpadding : 칸 기준으로 안쪽 여백 조정
+
+Table은 첫번째 tr에 td값을 가로 적용시 나머지 tr네 td값이 자동으로 이관됨
+단, 각각의 tr에 있는 td별 가로 크기를 적용하지는 못함
+높이 경우 tr에 높이를 적용시 해당 tr에 포함된 td는 동일한 높이를 적용하게 됩니다.
+또는 첫번재 칸에 높이를 적용시에도 모든 td에 적용 됩니다.
+-->
+<table border="1" cellspacing="0" cellpadding="0">
+<tr>
+<td>홍길동</td>
+<td>홍길동</td>
+</tr>
+</table>
+
+<br><br>
+<table border="1" cellspacing="0">
+<tr height="40" bgcolor="yellow">  <!-- bgcolor: background color -->
+<!-- align : left, center, right -->
+<td width="80" align="center">번호</td>
+<td width="250">제목</td>
+<td width="100">글쓴이</td>
+<td width="150">등록일</td>
+</tr>
+<!-- colspan: 열을 병합하는 속성. 단, 자신을 포함하여 숫자 입력 -->
+<tr height="40">
+<td colspan="4">등록된 게시물이 없습니다.</td>
+</tr>
+<tr height="40" align="center">
+<td>2</td>
+<td align="left">게시판</td>
+<td>관리자</td>
+<td>2025</td>
+</tr>
+<tr height="40">
+<td>1</td>
+<td>게시판</td>
+<td>관리자</td>
+<td>2025</td>
+</tr>
+</table>
+<br> <br>
+
+<!-- 신규 테이블 -->
+<table border="1" cellpadding="0" cellspacing="0">
+<!-- 데이터 출럭 형태 -->
+<thead> <!-- th : thead안에서만 사용하는 형태이며 -->
+<tr>
+<th>목차1</th>
+<th>목차2</th>
+<th>목차3</th>
+</tr>
+</thead>
+<!-- 데이터 출력 및 입력 파트 -->
+<tbody> <!-- tr, td를 이용하여 출력-->
+<tr height="30">
+<td width="100"></td>
+<td width="200"></td>
+<!-- rowspan: 상위 tr 및 td 에 사용하며,
+해당 값을 입력 후 아래에 있는 td를 삭제
+ -->
+<td width="300" rowspan="2"></td>
+</tr>
+<tr height="30">
+<td colspan="2"></td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

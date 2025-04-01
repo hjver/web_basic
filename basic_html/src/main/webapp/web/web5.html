@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML + Js Interface 활용</title>
+</head>
+<body>
+<!-- select에 onclick 사용시 더블 이벤트 발생 -->
+메일주소 : <input type="text"> @ <input type="text" id="email2">
+<select onchange="mails(this.value)">
+<option value="">직접입력</option>
+<option value="naver.com">네이버</option>
+<option value="nate.com">네이트</option>
+<option value="daum.net">다음</option>
+<option value="gmail.com">구글</option>
+<option value="hotmail.com">핫메일</option>
+</select>
+<br><br><br>
+<input type="button" value="랜덤숫자" onclick="lotto()">
+<br><br><br>
+<input type="button" value="인증번호 받기" onclick="cn()">
+</body>
+<script src="./js/web5.js?v=2"></script>
+</html>

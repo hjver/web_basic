@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* css 3.0 형태로 하여 출력하는
+/* class 이름은 .으로 시작 */
+.btn{
+	width:100px;
+	height:100px;
+	background-color: black;
+	color:white
+}
+.btn_orange{
+	background-color: orange;
+}
+#mpass{ /* # : id 이름으로 style을 적용한 상황 */
+	background-color: skyblue;
+	width:300px;
+	height:30px;
+}
+#mpass_orange{
+	background-color: orange;
+}
